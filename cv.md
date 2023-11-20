@@ -6,7 +6,7 @@
  -anagagnidze32@gmail.com
  -ana.gagnidze.3@btu.edu.ge
  
-## summary:
+## summary:   
 I have been interested in programming since an early age. It was my desire to create projects and sites that would be useful for people. To develop my skills and learn new things i have tried some online courses,which were a great help.This course is a great opportuniny to gain enough knowladge to explore the path to success and achieve my goals. 
 
 ## Skills:
