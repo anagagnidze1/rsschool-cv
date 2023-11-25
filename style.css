@@ -5,7 +5,7 @@ html, body {
 .container{
     width: 100%;
     background-color: rgb(42, 125, 105);
-
+    border-style:solid;
 }
 .logo{
     width: 7%;
@@ -127,6 +127,7 @@ html, body {
 .footer{
     background-color: rgb(42, 125, 105);
     display: flex;
+    border-style:solid;
 }
 .githublogo{
     width: 5%;
