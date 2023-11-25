@@ -5,6 +5,7 @@ html, body {
 .container{
     width: 100%;
     background-color: rgb(42, 125, 105);
+
 }
 .logo{
     width: 7%;
@@ -19,12 +20,15 @@ html, body {
 .headernav{
     width: 78%;
 	display: inline-block;
-	padding-top: 3%;
+	padding-top: 2%;
 	padding-left:8%;
 	vertical-align: top;
 	text-decoration: none;
 }
-.headernav > li{
+.navigation{
+    display: flex;
+}
+.navigation> li{
 	text-decoration: none;
 	display: inline-block;
 	font-size: 22px;
@@ -32,7 +36,7 @@ html, body {
 	font-family: 'ProximaNovaRG';
 	cursor: pointer;    
 }
-.headernav > li:hover{
+.navigation> li:hover{
 	color:rgb(213, 233, 231 );	
 }
 .leftside{
