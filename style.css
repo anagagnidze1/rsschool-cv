@@ -15,11 +15,14 @@ html, body {
 .imglogo{
     width: 100%;
     height:100%;
+    margin-top: 30%;
+    margin-left: 30%;
 }
 .headernav{
     width: 78%;
 	display: inline-block;
 	padding-top: 2%;
+    padding-bottom: 1%;
 	padding-left:8%;
 	vertical-align: top;
 	text-decoration: none;
@@ -45,8 +48,12 @@ html, body {
    background-color: rgb(42, 125, 105);
 }
 .mypicture{
-    padding-left: 17%;
+    /* padding-left: 17%; */
+    margin-left: 15%;
+    margin-top: 3%;
+    border-radius: 50%;
 }
+
 .line{   
     background-color:rgb(169, 192, 186  );
 }
