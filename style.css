@@ -5,7 +5,6 @@ html, body {
 .container{
     width: 100%;
     background-color: rgb(42, 125, 105);
-
 }
 .logo{
     width: 7%;
@@ -32,8 +31,9 @@ html, body {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 22px;
-	padding-left: 6%;
-	font-family: 'ProximaNovaRG';
+	padding-left: 2%;
+    padding-right: 2%;
+	font-family:Sans-serif;
 	cursor: pointer;    
 }
 .navigation> li:hover{
@@ -96,6 +96,11 @@ html, body {
     font-size: 60px;
     padding-left: 15%;
     font-family: Sans-serif;
+}
+.student{
+    font-size: 25px;
+    font-family: Sans-serif;
+    padding-left: 15%;
 }
 .informationaboutme{
     padding-top: 3%;
