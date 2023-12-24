@@ -4,30 +4,34 @@
         <meta charset="utf-8">
         <title>Coffee House</title>
         <link rel="stylesheet" href="style.css">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div class="wholeContent" >
+
+        
         <header>
             <div class="container">
                 <div class="logo">
                     <a class="plaintext" href="index.html">
-                        <img src="images/logo.png" alt="mainlogo">
-                        
+                        <img src="images/logo.png" alt="mainlogo">                        
                     </a>
-                   
-
                 </div>
-                <nav class="headernav">
+                <nav class="headernav">                  
                     <ul class="navigation">
                         <li><span class="txt">Favourite coffee</span></li>
                         <li class="txt">About</li>
                         <li class="txt">Mobile app</li>
                         <li class="txt">Contact us</li>
                     </ul>
-                    
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>                       
+                    </div>                                       
                 </nav>
                 <div class="menutxtdiv">
-                    <p class="menutxt">Menu</p>
+                    <a class="plaintext" href="Menu.html"><p class="menutxt">Menu</p></a>
+                    
                     <div  class="coffediv">
                         <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="coffee-cup">
@@ -37,29 +41,22 @@
                             <path id="Vector_2" d="M13.333 9.16675H15.4163C16.5669 9.16675 17.4997 10.0995 17.4997 11.2501C17.4997 12.4007 16.5669 13.3334 15.4163 13.3334H14.1663" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </g>
                             </svg>
-                    </div>
-                    
-                </div>
-                
-                
+                    </div>                    
+                </div>                
             </div>
         </header>
-        <main>
+        <main>          
             <div class="bigpicture">
-                <img class="coffeeimage" src="images/coffeephoto.png" alt="coffee picture">
-                <div class="enjoy">
-                    <h1 class="enjoytext"><span class="onlyenjoy">Enjoy</span> premium coffee at our charming cafe</h1>
-                </div>
-                <div class="littletext">
-                    <p class="text">
-                        With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
-                    </p>
-                </div>
-                <div class="button">
-                    <a class="plaintext" href="Menu.html">
-                        <p class="textonbutton">menu</p>
-                    </a>
-                    
+                <div class="enjoydiv">
+                    <div class="enjoyleft">
+                        <div class="enjoytxt"><span class="onlyenjoy">Enjoy</span> premium coffee at our charming cafe</div>
+                        <div class="littletext">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</div>
+                        <div class="button">
+                            <a class="plaintext" href="Menu.html">
+                                <p class="textonbutton">menu</p>
+                            </a>      
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -118,22 +115,23 @@
         <div class="perfectandcosy">
             <h2 class="perfectandcosytxt">Resource is <span class="browntext">the perfect and cozy place</span>  where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
         </div>
-      
-        <div class="images2">
-            <div class="column">
-                <div class="parent-of-img1" style="width: 41.25rem; height: 36.875em; overflow: hidden; border-radius: 1.2rem;">
-                    <div style="background: url(https://s3-alpha-sig.figma.com/img/6671/bd93/465b782f7ec6c3deeb3e97cebd563ce4?Expires=1702857600&Signature=i0QwiycFQ4wgX2xNMlHCH4GJf~prmcjI4xdzP43pcFXKJz6K2BNMtgWac1B4URDqpeidEaO6f3IBmN0Rzaa9M-R9LqW~qYTUkU3PYYx~HtKWfNaQsFNtbZAhsF9p8T-J3HP8e4DnENm-CU4xusqehM2Ur7uTP0K-uZAbzRK7mHxMJR2EiTCaMcBJ7BidwoVq~TGjE4DMyXVytBSYI3GWaEXCVSRAYkzlDwrkDffiERGiEoAqA-yO61tz~HcV32qwrBwMahcj7-qC98M4ZOj1ZJskHgObRIJw2K84-XYaTCkIsE04JEHFlxPyo8FK3pHi705NqtqRG-sNSoC-eze9GQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat; width:  45.375rem; height:  45.375rem; background-size: 100% 100%; border-radius: 1.25rem;"></div>
+        <div class="imgcontainer">
+            <div class="column1">
+                <div class="img1">
+                    <img class="girlimg" src="images/about-1.png">
                 </div>
-                <div class="parent-of-img1" style="width: 41.25rem; height: 26.875em; overflow: hidden; border-radius: 1.2rem;">
-                    <div style="background: url(https://s3-alpha-sig.figma.com/img/3956/da5e/d489e0c95b9096b7c8a60a4ad47b9b56?Expires=1702857600&Signature=pB1J6MWvuPI~DzbpCUx5PqEEEVSXAsdBwNOFbbYQ4mAB5tQvC~yvtmRK8hdyfHIQ8IkKYGqCilRsLon~nWJr38NKC~Iutnj0Eyh3aueBjF-RTh5yS1i92-gVLqiLyyXKO2fx5D6-Krwm-qQZ8o6NkFaGvFORWXJ1oGlOCp0cFuqwjybhU70ABdPuM6jHJhfrEbQ40ZR0SBNplzdfrcsN31Kp89EYE5zNaQXmmUX7Sdp~2ZV0xvPePKJRYJKssio3TOOwbvo16X9WW~O31jtGMVvOT6ABkkGwuWbw-CRZ5X9QX2cIOSLoOriyXf6uGPb5vKVZbCaZgYgjg3Cq4qNl5g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat; width: 45.375rem; height:  45.375rem; flex-shrink: 0; background-size: 95% 70%; border-radius: 1.25rem;"></div>
+                <div class="img1">
+                    <img class="girlimg" src="images/about-2.png">
+
                 </div>
             </div>
-            <div class="column">
-                <div class="parent-of-img1" style="width: 41.25rem; height: 26.875em; overflow: hidden; border-radius: 1.2rem;">
-                    <div style="background: url(https://s3-alpha-sig.figma.com/img/e569/31d4/cd0d53e8cb86335050545a92e43c50e3?Expires=1702857600&Signature=SxHN4kwSa74ZsS3YJmry52IFu7BzyKOYJouDY-qgAGEd4SC9n4mS3xFXvDkk3-3o8gNH6Gr2KEEnraNp29XWVGd~7HpxxxIKr8TVA1kWehHGaF2qrb6oM5711OzinB-6zFq6btfje7NclEcmqdBX~a4ad8B-ns6uhTRgOJA5eFAptHX-CVO7ZIzTs3FX6NWo0P2QRztmEb1RPgw6Bg-MxM1FF1-OQFJVIrY6F9zCv0IpmdDFAkbVDr6qfSZL-knri8jjKpyWce7y5v2pMgINKG4zyr1iUGmKsZa8mjUt2nxXmRAC5mGXkfR4kIWdANHQ4ZgBDOTBDhU6pr4Ys~qAXA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat; width:  45.375rem; height:  45.375rem; flex-shrink: 0; background-size: 95% 75%; border-radius: 1.25rem;"></div>
+            <div class="column1">
+                <div class="img1">
+                    <img class="girlimg" src="images/about-3.png">
                 </div>
-                <div class="parent-of-img1" style="width: 41.25rem; height: 36.875em; overflow: hidden; border-radius: 1.2rem;">
-                    <div style="background: url(https://s3-alpha-sig.figma.com/img/8000/6624/a32a387bbdf247b1a5ecbfdb88410cac?Expires=1702857600&Signature=HPclRd~ssDW8RiVXMPSdP0tipPzKam1a411RisDQTYikIkMzzeQIMedinWDHGC85Np8DTK7MC3TgNQREo5QU8WGWBJStVq0TsqZRiRjkD6sQm2VMy4UUzxzBNCJad2d6kN9sCflfmnk2PjxPfQfAMYTGPWx2UDDBOh~Q1VjyxX~SROxnA6k-elZdqyPZHnpyYC39~BJs8vn8Qn8LoDUWyKw2acXZjf5hfOPcdwAjGKK6zWCdPoeCbQ8MqndOvwyRGWeCnRkxaGzbjBnS6mUybHaJ-4abhdshpyHEGu8J4~ELAffrca42H0mLSc1SXslNIzgL9~S6v7XwYM6MuUTARw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat; width:  45.375rem; height:  45.375rem; flex-shrink: 0; background-size: cover; border-radius: 1.25rem;"></div>
+                <div class="img1">
+                    <img class="girlimg" src="images/about-4.png">
+
                 </div>
             </div>
         </div>
@@ -183,8 +181,7 @@
                             <g id="facebook">
                             <path id="Vector6" d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
                             </g>
-                            </svg>
-                            
+                            </svg>                           
                     </button>
                 </div>
             </div>
@@ -216,7 +213,6 @@
                     <div class="address">
                         <p class="pinaddress">+1 (603) 555-0123</p>
                     </div>
-
                 </div>
                 <div class="pindiv">
                     <div class="pin">
@@ -230,18 +226,15 @@
                             <rect width="20" height="20" fill="white"/>
                             </clipPath>
                             </defs>
-                        </svg>
-                            
+                        </svg>                            
                     </div>
                     <div class="address">
                         <p class="pinaddress">Mon-Sat: 9:00 AM – 23:00 PM</p>
                     </div>
-
-                </div>
-                
-            </div>
-            
+                </div>                
+            </div>            
         </footer>
         <script defer src="script.js"></script>
+    </div>
     </body>   
 </html>
