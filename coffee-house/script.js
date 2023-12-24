@@ -49,7 +49,7 @@ nextbtn.addEventListener('click', e => {
 
     moveToSlide(track, current, nextSlide);
     updateDots(currentDot, nextDot);
-    // hideShowArrows(slides, prevbtn, nextbtn, nextIndex);
+   
     
 })
 
@@ -62,7 +62,7 @@ prevbtn.addEventListener('click', e => {
     
     moveToSlide(track, current, prevSlide);
     updateDots(currentDot, prevDot);
-    // hideShowArrows(slides, prevbtn, nextbtn, prevIndex);
+   
 })
 
 
@@ -77,11 +77,5 @@ dotsnav.addEventListener('click', e =>{
 
 
     moveToSlide(track, current, targetSlide);
-    updateDots(currentDot, targetDot);
-    // hideShowArrows(slides, prevbtn, nextbtn, targetIndex);
-
-    
-    
-
-    
+    updateDots(currentDot, targetDot);  
 })
