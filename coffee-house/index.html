@@ -7,9 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="wholeContent" >
-
-        
+        <div class="wholeContent" >       
         <header>
             <div class="container">
                 <div class="logo">
@@ -25,8 +23,8 @@
                         <li class="txt">Contact us</li>
                     </ul>
                     <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>                       
+                        <div class="bar"></div>
+                                             
                     </div>                                       
                 </nav>
                 <div class="menutxtdiv">
@@ -45,8 +43,18 @@
                 </div>                
             </div>
         </header>
+        <nav class="mobile-nav">
+            <a href="#favorite" onclick="hideMenu()">Favourite coffee</a>
+            <a href="#about" onclick="hideMenu()">About</a>
+            <a href="#mobileapp" onclick="hideMenu()">Mobile app</a>
+            <a href="#contactus" onclick="hideMenu()">Contact us</a>
+            <a href="Menu.html" onclick="hideMenu()">Menu</a>
+        </nav>
         <main>          
             <div class="bigpicture">
+                <video class="coffee-video" autoplay muted loop>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
                 <div class="enjoydiv">
                     <div class="enjoyleft">
                         <div class="enjoytxt"><span class="onlyenjoy">Enjoy</span> premium coffee at our charming cafe</div>
@@ -63,7 +71,7 @@
         <div>
             <h2 class="favoritecoffee">Choose your<span class="highlight">favorite</span> coffee</h2>
         </div>
-        <div class="slideshowcontainer">
+        <div class="slideshowcontainer" id="favorite">
             <button class="carousel_button carousel_button--left">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="arrow-left">
@@ -115,7 +123,7 @@
         <div class="perfectandcosy">
             <h2 class="perfectandcosytxt">Resource is <span class="browntext">the perfect and cozy place</span>  where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
         </div>
-        <div class="imgcontainer">
+        <div class="imgcontainer" id="about">
             <div class="column1">
                 <div class="img1">
                     <img class="girlimg" src="images/about-1.png" alt="girlimage">
@@ -131,11 +139,10 @@
                 </div>
                 <div class="img1">
                     <img class="girlimg" src="images/about-4.png" alt="girlimage4">
-
                 </div>
             </div>
         </div>
-        <div class="appsdiv">
+        <div class="appsdiv" id="mobileapp">
             <div class="leftdiv">
                 <h1 class="downloadapps"><span class="highlight">Download</span> our apps to start ordering</h1>           
                 <p class="undertxt">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>    
@@ -154,7 +161,7 @@
                 <img class="twophone" src="images/mobile-screens.png" alt="phones">
             </div>
         </div>
-        <footer class="footersection">
+        <footer class="footersection" id="contactus">
             <div class="left">
                 <div class="sipdiv">
                     <h1 class="sip">Sip, Savor, Smile.<span class="highlight"> It’s coffee time!</span> </h1>
@@ -237,5 +244,41 @@
         <script defer src="script.js"></script>
     </div>
     </body>     
-
 </html>
+<script>
+
+
+window.onload = function () {
+	window.addEventListener('scroll', function (e) {
+		if (window.pageYOffset > 100) {
+			document.querySelector("header").classList.add('is-scrolling');
+		} else {
+			document.querySelector("header").classList.remove('is-scrolling');
+		}
+	});
+
+	const menu_btn = document.querySelector('.hamburger');
+	const mobile_menu = document.querySelector('.mobile-nav');
+
+	menu_btn.addEventListener('click', function () {
+		menu_btn.classList.toggle('is-active');
+		mobile_menu.classList.toggle('is-active');
+
+        if (mobile_menu.classList.contains('is-active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+	});
+}
+
+function hideMenu() {
+        const menu_btn = document.querySelector('.hamburger');
+        const mobile_menu = document.querySelector('.mobile-nav');
+
+        menu_btn.classList.remove('is-active');
+        mobile_menu.classList.remove('is-active');
+        document.body.style.overflow = '';
+    }
+
+</script>
