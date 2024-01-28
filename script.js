@@ -110,9 +110,9 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let i = 0; i < wordLength; i++) {
         const letterLi = document.createElement("li");
         letterLi.classList.add("letter");
-        if (i === 2) {
-            letterLi.classList.add("guessed");
-        }
+        // if (i === 2) {
+        //     letterLi.classList.add("guessed");
+        // }
         wordDisplay.appendChild(letterLi);
     }
     const hintText = document.createElement("h4");
@@ -128,6 +128,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const keyboard = document.createElement("div");
     keyboard.classList.add("keyboard");
+    
+    
 
     const gameOver = (isVictory) => {
         console.log('bool:' + isVictory)
@@ -162,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function(){
         button.disabled = true;
         if(wrongGuessCount === maxGuesses) return gameOver(false);
         if(correctLetters.length === currentWord.length) return gameOver(true);
+
     }
 
     for (let i = 65; i <= 90; i++) {
@@ -171,6 +174,17 @@ document.addEventListener("DOMContentLoaded", function(){
         button.addEventListener("click", e => initGame(e.target, String.fromCharCode(i)));
     }
 
+
+    gameBox.appendChild(keyboard);
+
+    
+    document.addEventListener("keydown", function (event) {
+        const pressedKey = event.key.toUpperCase();
+        const button = Array.from(keyboard.children).find(btn => btn.textContent === pressedKey);
+        if (button && !button.disabled) {
+            initGame(button, pressedKey);
+        }
+    });
 
     gameBox.appendChild(wordDisplay);
     gameBox.appendChild(hintText);

@@ -2,7 +2,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 95vh;
     background: #3C4B66;
     padding: 0 10px;
 }
@@ -36,13 +36,16 @@ body{
 .word-display .letter{
     width: 28px;
     border-bottom: 2px solid black;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-align: center;
+    font-family: Inter;
+    padding: 0 5px;
+    
+    
 }
-.word-display .letter .guessed{
-    border-color: transparent;
-    margin: -40px 0 35px;
+.word-display .letter.guessed{
+    border-bottom: none;
 }
 .game-box h4 {
     text-align: center;
@@ -151,6 +154,23 @@ body{
     .hangman-box h1 {
         display: none;
     }
+}
+@media(max-width: 380px){
+    .container{
+        flex-direction: column;
+        padding: 20px 5px;
+        align-items: center;
+    }
+    .hangman-box img{
+        max-width: 150px;
+    }
+    
+    .word-display .letter{
+        width: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
 }
 
 
