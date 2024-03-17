@@ -8,3 +8,4 @@
 6.**Generics in TypeScript**: [Badge] (https://learn.microsoft.com/api/achievements/share/en-us/AnaGagnidze-1102/9NCRWVKU?sharingId=52B4514886A04E5E)<br>
 7.**Work with External Libraries in TypeScript**: [Badge] (https://learn.microsoft.com/api/achievements/share/en-us/AnaGagnidze-1102/PTE3ASA4?sharingId=52B4514886A04E5E)<br>
 8.**Organize Code with Namespaces in TypeScript**: [Badge] (https://learn.microsoft.com/api/achievements/share/en-us/AnaGagnidze-1102/8RHP9XUW?sharingId=52B4514886A04E5E)<br>
+
